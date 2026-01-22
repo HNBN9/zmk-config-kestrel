@@ -19,13 +19,5 @@ manifest:
       path: external/zmk-pmw3610-driver
       clone-depth: 1
 
-    - name: zmk-feature-default-layer
-      path: external/zmk-feature-default-layer
-      clone-depth: 1
-
-    - name: zmk-driver-ext-power-transient
-      path: external/zmk-driver-ext-power-transient
-      clone-depth: 1
-
   self:
     path: config
