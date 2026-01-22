@@ -5,19 +5,19 @@
     col-offset = <5>;
 };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-charlieplex";
-        wakeup-source;
-        gpios
-        = <&xiao_d 14 (GPIO_ACTIVE_HIGH)>
-        , <&xiao_d 13 (GPIO_ACTIVE_HIGH)>
-        , <&xiao_d 4 (GPIO_ACTIVE_HIGH)>
-        , <&xiao_d 5 (GPIO_ACTIVE_HIGH)>
-        , <&xiao_d 6 (GPIO_ACTIVE_HIGH)>
-        , <&xiao_d 7 (GPIO_ACTIVE_HIGH)>
-        ;
-        interrupt-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-    };
+&kscan0 {
+    compatible = "zmk,kscan-gpio-charlieplex";
+    wakeup-source;
+
+    gpios = <&xiao_d 14 GPIO_ACTIVE_HIGH>,
+             <&xiao_d 13 GPIO_ACTIVE_HIGH>,
+             <&xiao_d 4 GPIO_ACTIVE_HIGH>,
+             <&xiao_d 5 GPIO_ACTIVE_HIGH>,
+             <&xiao_d 6 GPIO_ACTIVE_HIGH>,
+             <&xiao_d 7 GPIO_ACTIVE_HIGH>;
+
+    interrupt-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+};
 
 &pinctrl {
     spi0_default: spi0_default {
