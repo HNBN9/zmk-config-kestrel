@@ -1,20 +1,30 @@
 manifest:
+  version: 1.2
+
+  defaults:
+    remote: zmkfirmware
+    revision: main
+
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+
     - name: badjeff
       url-base: https://github.com/badjeff
 
   projects:
+    # ZMK core
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
-      import: app/west.yml
+      import:
+        file: app/west.yml
+        path-prefix: external
+      clone-depth: 1
 
+    # PMW3610 driver (external module)
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
-      path: modules/zmk-pmw3610-driver
+      path: external/zmk-pmw3610-driver
+      clone-depth: 1
 
   self:
     path: config
