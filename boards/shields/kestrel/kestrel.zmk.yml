@@ -4,7 +4,7 @@ name: Kestrel
 type: shield
 url: https://github.com/HNBN9/kestrel
 requires:
-  - seeed_xiao
+  -xiao_ble
 features:
   - keys
   - studio
