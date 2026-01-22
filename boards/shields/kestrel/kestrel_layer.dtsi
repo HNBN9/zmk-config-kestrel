@@ -1,0 +1,3 @@
+#define DEFAULT_L 0
+#define TRACKBALL_L 1
+#define SCROLL_L 2
