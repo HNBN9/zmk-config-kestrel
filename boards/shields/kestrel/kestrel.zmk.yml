@@ -9,4 +9,5 @@ features:
   - keys
   - studio
 siblings:
-  - kestrel
+  - kestrel_left
+  - kestrel_right
