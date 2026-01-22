@@ -1,0 +1,11 @@
+file_format: "1"
+id: kestrel
+name: kestrel
+type: shield
+url: https://github.com/HNBN9/kestrel
+requires: [seeed_xiao]
+features:
+  - keys
+siblings:
+  - kestrel_left
+  - kestrel_right
