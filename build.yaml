@@ -21,5 +21,7 @@
 
 include:
   - board: xiao_ble
-    shield: kestrel 
+    shield: kestrel_left
+  - board: xiao_ble
+    shield: kestrel_right
 
