@@ -56,6 +56,16 @@
     };
 };
 
+/ {
+    kscan0: kscan {
+        status = "disabled";
+    };
+
+    trackball: trackball {
+        status = "disabled";
+    };
+};
+
 &adc {
     status = "okay";
 };
