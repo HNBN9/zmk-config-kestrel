@@ -1,6 +1,6 @@
 manifest:
   defaults:
-    remote: hnbn
+    remote: zmkfirmware
     revision: main
   remotes:
     - name: zmkfirmware
