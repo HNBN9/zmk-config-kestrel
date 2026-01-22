@@ -3,7 +3,8 @@ id: kestrel
 name: Kestrel
 type: shield
 url: https://github.com/HNBN9/kestrel
-requires: [seeed_xiao]
+requires:
+  - seeed_xiao
 features:
   - keys
   - studio
