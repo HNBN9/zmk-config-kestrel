@@ -6,7 +6,13 @@
     col-offset = <5>;
 };
 
-&kscan0 {
+/ {
+    chosen {
+        zmk,kscan = &kscan_right;
+    };
+};
+
+kscan_right: kscan {
     compatible = "zmk,kscan-gpio-charlieplex";
     wakeup-source;
 
