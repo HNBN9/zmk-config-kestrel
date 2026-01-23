@@ -20,7 +20,7 @@
 
     gpios = <&gpio1 12  GPIO_ACTIVE_HIGH>,
              <&gpio1 13 GPIO_ACTIVE_HIGH>,
-             <&gpio0 29 4 GPIO_ACTIVE_HIGH>,
+             <&gpio0 29 GPIO_ACTIVE_HIGH>,
              <&gpio0 4 GPIO_ACTIVE_HIGH>,
              <&gpio0 5 GPIO_ACTIVE_HIGH>,
              <&gpio1 11 GPIO_ACTIVE_HIGH>;
