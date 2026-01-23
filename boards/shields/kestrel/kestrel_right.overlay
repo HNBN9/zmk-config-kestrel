@@ -9,14 +9,14 @@
     compatible = "zmk,kscan-gpio-charlieplex";
     wakeup-source;
 
-    gpios = <&xiao_d 14 GPIO_ACTIVE_HIGH>,
-             <&xiao_d 13 GPIO_ACTIVE_HIGH>,
-             <&xiao_d 4 GPIO_ACTIVE_HIGH>,
-             <&xiao_d 5 GPIO_ACTIVE_HIGH>,
-             <&xiao_d 6 GPIO_ACTIVE_HIGH>,
-             <&xiao_d 7 GPIO_ACTIVE_HIGH>;
+    gpios = <&gpio1 12  GPIO_ACTIVE_HIGH>,
+             <&gpio1 13 GPIO_ACTIVE_HIGH>,
+             <&gpio0 29 4 GPIO_ACTIVE_HIGH>,
+             <&gpio0 4 GPIO_ACTIVE_HIGH>,
+             <&gpio0 5 GPIO_ACTIVE_HIGH>,
+             <&gpio1 11 GPIO_ACTIVE_HIGH>;
 
-    interrupt-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &pinctrl {
