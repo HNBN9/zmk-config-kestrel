@@ -16,6 +16,7 @@ endif
 if SHIELD_KESTREL_RIGHT
 
 config PMW3610
+    bool
     default y
 config ZMK_POINTING
     default y
@@ -38,7 +39,8 @@ config ZMK_PM_SOFT_OFF
     default y
 
 config ZMK_DEFAULT_LAYER
-    default y
+    int
+    default 0
 
 endif
 
