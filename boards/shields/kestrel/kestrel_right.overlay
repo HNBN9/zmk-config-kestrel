@@ -58,7 +58,6 @@
         y-input-code = <INPUT_REL_Y>;
         // disable force-awake
         // force-awake;
-        disable-burst-read;
     };
 };
 
@@ -66,7 +65,13 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-  };
+    input-processors = <&zip_temp_layer TRACKBALL_L 500>;
+
+   scroller {
+    layers = <SCROLL_L>;
+    input-processors = <&zip_xy_scaler 1 60 &zip_xy_to_scroll_mapper>;
+        };
+    };
 };
 
 &xiao_serial {
