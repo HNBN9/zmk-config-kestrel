@@ -5,7 +5,7 @@
         zmk,kscan = &kscan_left;
         zmk,matrix-transform = &transform_left;
     };
-};
+
 
 kscan_left: kscan {
     compatible = "zmk,kscan-gpio-matrix";
@@ -25,4 +25,5 @@ kscan_left: kscan {
                  <&gpio0 3 GPIO_ACTIVE_HIGH>;
 
     //interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+};
 };
