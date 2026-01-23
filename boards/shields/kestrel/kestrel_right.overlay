@@ -2,11 +2,13 @@
 #include <dt-bindings/input/input-event-codes.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
+&default_transform {
+    col-offset = <5>;
+};
 
 / {
     chosen {
         zmk,kscan = &kscan_right;
-        zmk,physical-layout = &default_layout;
         zmk,matrix-transform = &transform_right;
     };
 
