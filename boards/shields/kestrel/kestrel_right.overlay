@@ -9,6 +9,7 @@
 / {
     chosen {
         zmk,kscan = &kscan_right;
+        zmk,matrix-transform = &transform_right;
     };
 };
 
