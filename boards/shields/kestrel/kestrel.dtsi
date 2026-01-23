@@ -41,7 +41,6 @@
         power-gpios; // unset
         output-ohms = <470000>;
         full-ohms = <(1000000 + 470000)>;
-        mv-to-pct-thresholds = <3300 3600 3700 3750 3800 3850 3900 4000 4100 4200>;
     };
 };
 
