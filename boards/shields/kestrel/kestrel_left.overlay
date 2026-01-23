@@ -1,9 +1,9 @@
 #include "kestrel.dtsi"
-#include "kestrel-layouts.dtsi"
+//#include "kestrel-layouts.dtsi"
 
 / {
     chosen {
-        zmk,physical-layout = &default_layout;
+        //zmk,physical-layout = &default_layout;
         zmk,kscan = &kscan0;
     };
 };
