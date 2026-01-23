@@ -16,7 +16,7 @@
              <&gpio0 5 GPIO_ACTIVE_HIGH>,
              <&gpio1 11 GPIO_ACTIVE_HIGH>;
 
-    interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    //interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &pinctrl {
