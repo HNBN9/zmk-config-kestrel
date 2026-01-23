@@ -6,10 +6,11 @@
 
 / {
     chosen {
+        zmk,physical-layout = &default_layout;
         zmk,battery = &vbatt;
     };
 
-   transform_left: keymap_transform_left {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <9>;
         rows = <5>;
@@ -25,22 +26,6 @@
         >;
     };
 
-   transform_right: keymap_transform_right {
-        compatible = "zmk,matrix-transform";
-        columns = <9>;
-        rows = <5>;
-        col-offset = <5>;
-        map = <
-        //sw1 sw2 sw3 sw4 sw5                                sw6 sw7 sw8 sw9 sw10
-        RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)              RC(4,5) RC(3,5) RC(2,5) RC(1,5) RC(0,6)
-        //sw11 sw12 sw13 sw14 sw15                           sw16 sw17 sw18 sw19 sw20
-        RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)              RC(4,6) RC(3,6) RC(2,6) RC(1,7) RC(0,7)
-        //sw21 sw22 sw23 sw24 sw25                           sw26 sw27 sw28 sw29 sw30
-        RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)              RC(4,7) RC(3,7) RC(2,8) RC(1,8) RC(0,8)
-        //up left center right down sw31                     sw32
-        RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(4,4)      RC(4,8)
-        >;
-    };
 
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
