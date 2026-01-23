@@ -7,7 +7,7 @@ requires:
   -xiao_ble
 features:
   - keys
-  - studio
+//  - studio
 siblings:
   - kestrel_left
   - kestrel_right
