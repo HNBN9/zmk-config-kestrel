@@ -26,3 +26,7 @@ kscan_left: kscan {
     //interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 };
+
+&i2c0 {
+        status = "disabled";
+};
