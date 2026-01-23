@@ -1,14 +1,6 @@
 #include "kestrel.dtsi"
 #include <dt-bindings/input/input-event-codes.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-//#include "kestrel-layouts.dtsi"
-
-/ {
-    chosen {
-        //zmk,physical-layout = &default_layout;
-        zmk,kscan = &kscan0;
-    };
-};
 
 &default_transform {
     col-offset = <5>;
