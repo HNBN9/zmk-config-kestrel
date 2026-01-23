@@ -1,7 +1,12 @@
 #include "kestrel.dtsi"
 
+/ {
+    chosen {
+        zmk,kscan = &kscan_left;
+    };
+};
 
-&kscan0 {
+kscan_left: kscan {
     compatible = "zmk,kscan-gpio-matrix";
     wakeup-source;
     diode-direction = "col2row";
