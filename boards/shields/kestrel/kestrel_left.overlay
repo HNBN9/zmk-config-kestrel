@@ -1,12 +1,5 @@
 #include "kestrel.dtsi"
-//#include "kestrel-layouts.dtsi"
 
-/ {
-    chosen {
-        //zmk,physical-layout = &default_layout;
-        zmk,kscan = &kscan0;
-    };
-};
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
