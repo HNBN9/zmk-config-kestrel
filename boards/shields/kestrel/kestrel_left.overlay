@@ -3,7 +3,6 @@
 / {
     chosen {
         zmk,kscan = &kscan_left;
-        zmk,physical-layout = &default_layout;
         zmk,matrix-transform = &transform_left;
     };
 
