@@ -34,16 +34,24 @@
         excluded-positions = <19 20 21 22 32 33 41 52 53 54 55 56 57 58 59>;
     };
 
-//   vbatt: vbatt {
-//        compatible = "zmk,battery-voltage-divider";
-//        io-channels = <&adc 2>;
-//        power-gpios; // unset
-//        output-ohms = <470000>;
-//        full-ohms = <(1000000 + 470000)>;
-//    };
+   vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 2>;
+        power-gpios; // unset
+        output-ohms = <470000>;
+        full-ohms = <(1000000 + 470000)>;
+    };
 };
 
 
 &adc {
     status = "okay";
+};
+
+&i2c0 {
+        status = "disabled";
+};
+
+&i2c1 {
+        status = "disabled";
 };
