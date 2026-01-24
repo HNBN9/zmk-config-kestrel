@@ -1,3 +1,4 @@
-#define DEFAULT_L 0
-#define TRACKBALL_L 1
-#define SCROLL_L 2
+#define QWERTY_L 0
+#define COLEMAK_L 1
+#define TRACKBALL_L 2
+#define SCROLL_L 3
