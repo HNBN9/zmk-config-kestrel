@@ -2,6 +2,7 @@
 #define COLEMAK_L 1
 #define LEFT_L 2
 #define RIGHT_L 3
-#define SYSTEM_L 4
-#define TRACKBALL_L 5
-#define SCROLL_L 6
+#define POINT_L 4
+#define SYSTEM_L 5
+#define TRACKBALL_L 6
+#define SCROLL_L 7
