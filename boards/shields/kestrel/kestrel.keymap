@@ -32,20 +32,20 @@
         trackball_layer {
             display-name = "Trackball";
             bindings = <
-            &trans      &trans      &trans      &trans      &trans           /**/          &trans      &trans      &mkp MCLK    &trans      &trans
-            &trans      &trans      &trans      &trans      &trans           /**/          &trans      &mkp LCLK   &mo SCROLL_L &mkp RCRK  &trans
-            &trans      &trans      &trans      &trans      &trans           /**/          &trans      &trans      &trans      &trans      &trans
-                &trans  &trans  &trans  &trans  &trans      &trans           /**/          &trans       
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &mkp MCLK    &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &mkp LCLK   &mo SCROLL_L &mkp RCRK  &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+                &trans  &trans  &trans  &trans  &trans      &trans                     &trans       
             >;
         };
 
         scroll_layer {
             display-name = "Scroll";
             bindings = <
-            &trans      &trans      &trans      &trans      &trans           /**/          &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans           /**/          &trans      &trans      &trans      &trans      &trans
-            &trans      &trans      &trans      &trans      &trans           /**/          &trans      &trans      &trans      &trans      &trans
-                &trans  &trans  &trans  &trans  &trans      &trans           /**/          &trans       
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+                &trans  &trans  &trans  &trans  &trans      &trans                     &trans       
             >;
         };
 
