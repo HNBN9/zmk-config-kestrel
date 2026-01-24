@@ -28,13 +28,13 @@
             //|    Z    |    X    |    C    |    V    |                                        |    B    |    N     |    M    |    /    |
             // --------------------------------------------------------------------------------------------------------------------------
             //              |    UP    |              |   ESC   |                    |   RALT  |
-            //    |   LT    | QWER/COL |    RT   |    |ENTER/FN |                    |SPACE/FN |
+            //    |   LT    | QWER/COL |    RT   |    | BKSP/FN |                    |SPACE/FN |
             //              |    DN    |
             bindings = <
             &kp Q      &kp W      &kp E      &kp R      &kp T           /**/          &kp Y      &kp U      &kp I      &kp O      &kp P
             &mt LSHFT A &mt LCTRL S &mt LWIN D &mt LALT F &lt POINT_L G /**/      &lt SYSTEM_L H &mt LALT J &mt LWIN K &mt LCTRL L &mt RSHFT SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp N      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to COLEMAK_L &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            &kp UP &kp LEFT &to COLEMAK_L &kp RIGHT &kp DOWN &lt LEFT_L BSPC    /**/          &lt RIGHT_L SPACE       
             >;
         };
 
@@ -46,13 +46,13 @@
             //|    Z    |    X    |    C    |    V    |                                        |    B    |    K     |    M    |    /    |
             // --------------------------------------------------------------------------------------------------------------------------
             //              |    UP    |              |   ESC   |                    |   RALT  |
-            //    |   LT    | QWER/COL |    RT   |    |ENTER/FN |                    |SPACE/FN |
+            //    |   LT    | QWER/COL |    RT   |    | BKSP/FN |                    |SPACE/FN |
             //              |    DN    |
             bindings = <
             &kp Q      &kp W      &kp F      &kp P      &kp G           /**/          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
             &mt LSHFT A &mt LCTRL R &mt LWIN S &mt LALT T &lt POINT_L D /**/      &lt SYSTEM_L H &mt LALT N &mt LWIN E &mt LCTRL I &mt RSHFT O
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp K      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to QWERTY_L &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            &kp UP &kp LEFT &to QWERTY_L &kp RIGHT &kp DOWN &lt LEFT_L BSPC    /**/          &lt RIGHT_L SPACE       
             >;
         };
 
@@ -64,13 +64,13 @@
             //|         |   F1    |    F2   |    F3   |                                        |    1    |    2     |    3    |    =    |
             // --------------------------------------------------------------------------------------------------------------------------
             //              |          |              |         |                    | CPSLCK  |
-            //    |         |          |         |    |         |                    |  BKSP   |
+            //    |         |          |         |    |         |                    |  ENTER  |
             //              |          |
             bindings = <
             &trans      &kp F7      &kp F8      &kp F9      &trans                     &kp MINUS   &kp N7      &kp N8      &kp N9      &kp N0
             &kp LSHFT  &mt LCTRL F4 &mt LWIN F5 &mt LALT F6 &trans                     &kp PLUS    &mt LALT N4 &mt LWIN N5 &mt LCTRL N6 &kp RSHFT
             &trans      &kp F1      &kp F2      &kp F3      &trans                     &kp CLCK    &kp N1      &kp N2      &kp N3      &kp EQUAL
-                &trans  &trans  &trans  &trans  &trans      &trans                     &kp BSPC       
+                &trans  &trans  &trans  &trans  &trans      &trans                     &kp ENTER       
             >;
         };
 
