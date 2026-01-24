@@ -27,6 +27,4 @@ kscan_left: kscan {
 };
 };
 
-&i2c0 {
-        status = "disabled";
-};
+
