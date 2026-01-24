@@ -7,6 +7,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mt {
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
+};
+
+&lt {
+    tapping-term-ms = <300>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
