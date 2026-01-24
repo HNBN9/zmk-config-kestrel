@@ -15,17 +15,106 @@
             display-name = "QWERTY";
             // --------------------------------------------------------------------------------------------------------------------------
             //|    Q    |    W    |    E    |    R    |    T    |                    |    Y    |    U    |    I     |    O    |    P    |
-            //|    A    |    S    |    D    |    F    |    G    |                    |    H    |    J    |    K     |    L    |    ;    |
-            //|    Z    |    X    |    C    |    V    |                                        |    B    |    N     |    M    |    ,    |
+            //| A/SHIFT |  S/CTRL |  D/WIN  | F/LALT  | G/POINT |                    |  H/SYS  | J/LALT  |  K/WIN   | L/CTRL  | ;/SHIFT |
+            //|    Z    |    X    |    C    |    V    |                                        |    B    |    N     |    M    |    /    |
             // --------------------------------------------------------------------------------------------------------------------------
-            //              |    UP    |              |   LALT  |                    |   RALT  |
-            //    |   LT    |          |    RT   |    |ENTER/FN |                    |  SPACE  |
+            //              |    UP    |              |   ESC   |                    |   RALT  |
+            //    |   LT    | QWER/COL |    RT   |    |ENTER/FN |                    |SPACE/FN |
             //              |    DN    |
             bindings = <
             &kp Q      &kp W      &kp E      &kp R      &kp T           /**/          &kp Y      &kp U      &kp I      &kp O      &kp P
-            &kp A      &kp S      &kp D      &kp F      &kp G           /**/          &kp H      &kp J      &kp K      &kp L      &kp SEMI
-            &kp Z      &kp X      &kp C      &kp V      &kp LALT        /**/          &kp RALT   &kp B      &kp N      &kp M      &kp COMMA
-            &kp UP &kp LEFT &kp TAB &kp RIGHT &kp DOWN &bootloader    /**/          &kp SPACE       
+            &mt LSHFT A &mt LCTRL S &mt LWIN D &mt LALT F &lt POINT_L G /**/      &lt SYSTEM_L H &mt LALT J &mt LWIN K &mt LCTRL L &mt RSHFT SEMI
+            &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp N      &kp M      &kp FSLH
+            &kp UP &kp LEFT &to COLEMAK_L &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            >;
+        };
+
+        Colemak_layer {
+            display-name = "Colemak";
+            // --------------------------------------------------------------------------------------------------------------------------
+            //|    Q    |    W    |    F    |    P    |    G    |                    |    J    |    L    |    U     |    Y    |    ;    |
+            //| A/SHIFT |  R/CTRL |  S/WIN  | T/LALT  | D/POINT |                    |  H/SYS  | N/LALT  |  E/WIN   | I/CTRL  | O/SHIFT |
+            //|    Z    |    X    |    C    |    V    |                                        |    B    |    K     |    M    |    /    |
+            // --------------------------------------------------------------------------------------------------------------------------
+            //              |    UP    |              |   ESC   |                    |   RALT  |
+            //    |   LT    | QWER/COL |    RT   |    |ENTER/FN |                    |SPACE/FN |
+            //              |    DN    |
+            bindings = <
+            &kp Q      &kp W      &kp F      &kp P      &kp G           /**/          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
+            &mt LSHFT A &mt LCTRL R &mt LWIN S &mt LALT T &lt POINT_L D /**/      &lt SYSTEM_L H &mt LALT N &mt LWIN E &mt LCTRL I &mt RSHFT O
+            &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp K      &kp M      &kp FSLH
+            &kp UP &kp LEFT &to QWERTY_L &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            >;
+        };
+
+        left_layer {
+            display-name = "Left";
+            // --------------------------------------------------------------------------------------------------------------------------
+            //|         |   F7    |    F8   |    F9   |         |                    |    -    |    7    |    8     |    9    |    0    |
+            //| SHIFT   |   F4    |    F5   |    F6   |         |                    |    +    |    4    |    5     |    6    |  SHIFT  |
+            //|         |   F1    |    F2   |    F3   |                                        |    1    |    2     |    3    |    =    |
+            // --------------------------------------------------------------------------------------------------------------------------
+            //              |          |              |         |                    | CPSLCK  |
+            //    |         |          |         |    |         |                    |  BKSP   |
+            //              |          |
+            bindings = <
+            &trans      &kp F7      &kp F8      &kp F9      &trans                     &kp MINUS   &kp N7      &kp N8      &kp N9      &kp N0
+            &kp LSHFT  &mt LCTRL F4 &mt LWIN F5 &mt LALT F6 &trans                     &kp PLUS    &mt LALT N4 &mt LWIN N5 &mt LCTRL N6 &kp RSHFT
+            &trans      &kp F1      &kp F2      &kp F3      &trans                     &kp CLCK    &kp N1      &kp N2      &kp N3      &kp EQUAL
+                &trans  &trans  &trans  &trans  &trans      &trans                     &kp BSPC       
+            >;
+        };
+
+        right_layer {
+            display-name = "Right";
+            // --------------------------------------------------------------------------------------------------------------------------
+            //|         |    _    |    -    |    [    |         |                    |         |    ]    |    +     |    =    |         |
+            //| SHIFT   |    `    |    \    |    (    |         |                    |         |    )    |    /     |    '    |  SHIFT  |
+            //|         |         |         |    ,    |                                        |    .    |          |         |         |
+            // --------------------------------------------------------------------------------------------------------------------------
+            //              |          |              |         |                    |         |
+            //    |         |          |         |    |   TAB   |                    |         |
+            //              |          |
+            bindings = <
+            &trans      &kp UNDER   &kp MINUS   &kp LBKT    &trans                     &trans      &kp RBKT    &kp PLUS    &kp EQUAL   &trans
+            &kp LSHFT   &kp GRAVE   &kp BSLH    &kp LPAR    &trans                     &trans      &kp RPAR    &kp FSLH    &kp SQT     &kp RSHFT
+            &trans      &trans      &trans      &kp COMMA   &trans                     &trans      &kp DOT      &trans      &trans      &trans
+                &trans  &trans  &trans  &trans  &trans      &kp TAB                     &trans       
+            >;
+        };
+
+        point_layer {
+            display-name = "Point";
+            // --------------------------------------------------------------------------------------------------------------------------
+            //|         |         |         |         |         |                    |         |         |    UP    |         |         |
+            //|         |         |         |         |         |                    |         |   LEFT  |   DOWN   |  RIGHT  |         |
+            //|         |         |         |         |                                        |         |          |         |         |
+            // --------------------------------------------------------------------------------------------------------------------------
+            //              |          |              |         |                    |         |
+            //    |         |          |         |    |         |                    |         |
+            //              |          |
+            bindings = <
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &kp UP      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+                &trans  &trans  &trans  &trans  &trans      &trans                     &trans    
+            >;
+        };
+        system_layer {
+            display-name = "System";
+            // --------------------------------------------------------------------------------------------------------------------------
+            //|  BOOT   |   BT1   |   BT2   |   BT3   |  BT_CLR |                    |         |         |          |         |  BOOT   |
+            //|         |         |         |         |         |                    |         |         |          |         |         |
+            //|         |         |         |         |                                        |         |          |         |         |
+            // --------------------------------------------------------------------------------------------------------------------------
+            //              |          |              |         |                    |         |
+            //    |         |          |         |    |         |                    |         |
+            //              |          |
+            bindings = <
+            &bootloader &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR              &trans      &trans      &trans      &trans      &bootloader
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+                &trans  &trans  &trans  &trans  &trans      &trans                     &trans       
             >;
         };
 
