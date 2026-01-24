@@ -1,4 +1,6 @@
 #define QWERTY_L 0
 #define COLEMAK_L 1
-#define TRACKBALL_L 2
-#define SCROLL_L 3
+#define LEFT_L 2
+#define RIGHT_L 3
+#define TRACKBALL_L 4
+#define SCROLL_L 5
