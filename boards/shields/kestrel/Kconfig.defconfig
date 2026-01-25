@@ -1,7 +1,7 @@
 if SHIELD_KESTREL_LEFT || SHIELD_KESTREL_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Kestrel KB"
+    default "Kestrel KB_R"
 
 config ZMK_SPLIT
     default y
