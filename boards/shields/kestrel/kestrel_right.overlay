@@ -10,6 +10,7 @@
 / {
     chosen {
         zmk,kscan = &kscan_right;
+        zmk,pointing-device = &trackball;
     };
 
 kscan_right: kscan {
