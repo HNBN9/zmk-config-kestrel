@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/matrix_transform.h>
+n#include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/input/input-event-codes.h>
 #include "kestrel-layouts.dtsi"
 #include <input/processors.dtsi>
@@ -130,7 +130,7 @@
         trackball_layer {
             display-name = "Trackball";
             bindings = <
-            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &mkp MCLK    &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &mkp MB4    &mkp MCLK    &mkp MB5      &trans
             &trans      &trans      &trans      &trans      &trans                     &trans      &mkp LCLK   &mo SCROLL_L &mkp RCLK  &trans
             &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
                 &trans  &trans  &trans  &trans  &trans      &trans                     &trans       
