@@ -67,7 +67,6 @@ kscan_right: kscan {
         // disable force-awake
         force-awake;
         force-awake-4ms-mode;
-        disable-burst-read;
     };
 };
 
