@@ -1,11 +1,7 @@
 if SHIELD_KESTREL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Kestrel KB"
-
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    default y
-
+    default "Kestrel KB"\
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
     default y
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
