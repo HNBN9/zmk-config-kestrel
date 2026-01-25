@@ -24,6 +24,3 @@ include:
     shield: kestrel_left
   - board: xiao_ble
     shield: kestrel_right
-    snippet: zmk-usb-logging
-  - board: xiao_ble
-    shield: settings_reset
