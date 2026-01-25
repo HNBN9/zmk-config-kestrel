@@ -1,7 +1,5 @@
 if SHIELD_KESTREL_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "Kestrel KB"\
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
     default y
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
@@ -10,6 +8,9 @@ config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
 endif
 
 if SHIELD_KESTREL_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Kestrel KB"
 
 config PMW3610
     bool
