@@ -219,5 +219,17 @@
             bindings = <&kp LALT>;
             layers = <QWERTY_L COLEMAK_L>;
         };
+        combo_point_L {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&to POINT_L>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_sys_L {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&to SYSTEM_L>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
     };
 };
