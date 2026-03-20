@@ -41,7 +41,7 @@
             //              |    DN    |
             bindings = <
             &kp Q      &kp W      &kp E      &kp R      &kp T           /**/          &kp Y      &kp U      &kp I      &kp O      &kp P
-            &mt LSHFT A &kp S     &kp D      &kp F      &lt POINT_L G   /**/      &lt SYSTEM_L H &kp J      &kp K      &kp L      &mt RSHFT SEMI
+            &mt LSHFT A &kp S     &kp D      &kp F      &kp G           /**/          &kp H      &kp J      &kp K      &kp L      &mt RSHFT SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp N      &kp M      &kp FSLH
             &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
             >;
@@ -51,7 +51,7 @@
             display-name = "Colemak";
             // --------------------------------------------------------------------------------------------------------------------------
             //|    Q    |    W    |    F    |    P    |    G    |                    |    J    |    L    |    U     |    Y    |    ;    |
-            //| A/SHIFT |    R    |    S    |    T    | D/POINT |                    |  H/SYS  |    N    |    E     |    I    | O/SHIFT |
+            //| A/SHIFT |    R    |    S    |    T    |    D    |                    |    H    |    N    |    E     |    I    | O/SHIFT |
             //|    Z    |    X    |    C    |    V    |                                        |    B    |    K     |    M    |    /    |
             // --------------------------------------------------------------------------------------------------------------------------
             //              |    UP    |              |   ESC   |                    |   RALT  |
@@ -59,7 +59,7 @@
             //              |    DN    |
             bindings = <
             &kp Q      &kp W      &kp F      &kp P      &kp G           /**/          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
-            &mt LSHFT A &kp R     &kp S      &kp T      &lt POINT_L D   /**/      &lt SYSTEM_L H   &kp N      &kp E      &kp I      &mt RSHFT O
+            &mt LSHFT A &kp R     &kp S      &kp T      &kp D           /**/          &kp H      &kp N      &kp E      &kp I      &mt RSHFT O
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp K      &kp M      &kp FSLH
             &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
             >;
