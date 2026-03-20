@@ -249,5 +249,17 @@
             bindings = <&to SYSTEM_L>;
             layers = <QWERTY_L COLEMAK_L>;
         };
+        combo_ESC {
+            timeout-ms = <50>;
+            key-positions = <24 35>;
+            bindings = <&kp ESC>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_Ralt {
+            timeout-ms = <50>;
+            key-positions = <25 36>;
+            bindings = <&kp RALT>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
     };
 };
