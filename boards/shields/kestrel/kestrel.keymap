@@ -175,13 +175,13 @@
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp COMMA>;
-            layers = <QWERTY_L COLEMAK_L>
+            layers = <QWERTY_L COLEMAK_L>;
         };
         combo_dot {
             timeout-ms = <50>;
             key-positions = <28 29>;
             bindings = <&kp DOT>;
-            layers = <QWERTY_L COLEMAK_L>
+            layers = <QWERTY_L COLEMAK_L>;
         };
     };
 };
