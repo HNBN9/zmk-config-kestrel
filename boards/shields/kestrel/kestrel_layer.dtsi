@@ -1,9 +1,10 @@
 #define QWERTY_L 0
 #define COLEMAK_L 1
-#define LEFT_L 2
-#define RIGHT_L 3
-#define POINT_L 4
-#define SYSTEM_L 5
-#define TRACKBALL_L 6
-#define SCROLL_L 7
-#define SELLECTER 8
+#define GAME_L 2
+#define LEFT_L 3
+#define RIGHT_L 4
+#define POINT_L 5
+#define SYSTEM_L 6
+#define TRACKBALL_L 7
+#define SCROLL_L 8
+#define SELLECTER 9
