@@ -178,7 +178,7 @@
         };
         combo_dot {
             timeout-ms = <50>;
-            key-positions = <29 28>;
+            key-positions = <28 29>;
             bindings = <&kp DOT>;
         };
     };
