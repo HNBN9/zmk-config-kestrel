@@ -34,7 +34,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T           /**/          &kp Y      &kp U      &kp I      &kp O      &kp P
             &mt LSHFT A &mt LCTRL S &mt LWIN D &mt LALT F &lt POINT_L G /**/      &lt SYSTEM_L H &mt LALT J &mt LWIN K &mt LCTRL L &mt RSHFT SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp N      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to COLEMAK_L &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
             >;
         };
 
@@ -52,7 +52,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp G           /**/          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
             &mt LSHFT A &mt LCTRL R &mt LWIN S &mt LALT T &lt POINT_L D /**/      &lt SYSTEM_L H &mt LALT N &mt LWIN E &mt LCTRL I &mt RSHFT O
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp K      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to QWERTY_L &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
             >;
         };
 
@@ -146,6 +146,17 @@
                 &trans  &trans  &trans  &trans  &trans      &trans                     &trans       
             >;
         };
+
+        sellect_layer {
+            display-name = "Scroll";
+            bindings = <
+            &to QWERTY_L &to COLEMAK_L &trans   &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+            &trans      &trans      &trans      &trans      &trans                     &trans      &trans      &trans      &trans      &trans
+                &trans  &trans  &trans  &trans  &trans      &trans                     &trans       
+            >;
+        };
+
 
     };
 };
