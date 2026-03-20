@@ -183,5 +183,41 @@
             bindings = <&kp DOT>;
             layers = <QWERTY_L COLEMAK_L>;
         };
+        combo_ctrl_L {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp LCTRL>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_ctrl_R {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp LCTRL>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_win_L {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LWIN>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_win_R {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp LWIN>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_alt_L {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LALT>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
+        combo_alt_R {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp LALT>;
+            layers = <QWERTY_L COLEMAK_L>;
+        };
     };
 };
