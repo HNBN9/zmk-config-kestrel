@@ -43,7 +43,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T           /**/          &kp Y      &kp U      &kp I      &kp O      &kp P
             &mt LSHFT A &kp S     &kp D      &kp F      &kp G           /**/          &kp H      &kp J      &kp K      &kp L      &mt RSHFT SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp N      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            &kp UP &kp LEFT &mo SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
             >;
         };
 
@@ -61,7 +61,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp G           /**/          &kp J      &kp L      &kp U      &kp Y      &kp SEMI
             &mt LSHFT A &kp R     &kp S      &kp T      &kp D           /**/          &kp H      &kp N      &kp E      &kp I      &mt RSHFT O
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp K      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
+            &kp UP &kp LEFT &mo SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER    /**/          &lt RIGHT_L SPACE       
             >;
         };
 
@@ -79,7 +79,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T           /**/          &kp Y      &kp U      &kp I      &kp O      &kp P
             &kp A      &kp S      &kp D      &kp F      &kp G           /**/          &kp H      &kp J      &kp K      &kp L      &kp SEMI
             &kp Z      &kp X      &kp C      &kp V      &kp ESC         /**/          &kp RALT   &kp B      &kp N      &kp M      &kp FSLH
-            &kp UP &kp LEFT &to SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER  /**/          &kp SPACE       
+            &kp UP &kp LEFT &mo SELLECTER &kp RIGHT &kp DOWN &lt LEFT_L ENTER  /**/          &kp SPACE       
             >;
         };
 
@@ -240,13 +240,13 @@
         combo_point_L {
             timeout-ms = <50>;
             key-positions = <13 14>;
-            bindings = <&to POINT_L>;
+            bindings = <&mo POINT_L>;
             layers = <QWERTY_L COLEMAK_L>;
         };
         combo_sys_L {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&to SYSTEM_L>;
+            bindings = <&mo SYSTEM_L>;
             layers = <QWERTY_L COLEMAK_L>;
         };
         combo_ESC {
